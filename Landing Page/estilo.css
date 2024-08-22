@@ -13,6 +13,8 @@ html{
     scroll-behavior: smooth;
 }
 
+/*Header*/
+
 .contenedor-header{
     background: #1e2326;
     position: fixed;
@@ -66,7 +68,139 @@ html{
     display: none;
 }
 
+/*Inicio*/
+
 .inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.6), rgba(30,35,38,1)),
-    url(images/wallpaper.jpg);
+    background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1)), url(images/wallpaper.jpg);
+    background-size: cover;
+    height: 105vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #22282c;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 90px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid rgb(255, 136, 0);
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 37px;
+    font-family: 'Righteous';
+}
+
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 30px 10px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: rgb(255, 136, 0);
+}
+
+/*Sobre Mi*/
+
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .contenido-seccion p span{
+    color: rgb(255, 136, 0);
+    font-weight: bold;
+}
+
+.sobremi .fila{
+    display: flex;
+}
+
+.sobremi .fila .col{
+    width: 50%;
+}
+
+
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul{
+    list-style: none;
+}
+
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: rgb(255, 136, 0);
+    width: 130px;
+}
+
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 110px;
+    height: 110px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
 }
