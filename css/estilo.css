@@ -73,7 +73,7 @@ html{
 /*Inicio*/
 
 .inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1)), url(/Resources/images/wallpaper.jpg);
+    background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1)), url(/images/wallpaper.jpg);
     background-size: contain;
     height: 100vh;
     color: #fff;
@@ -133,7 +133,7 @@ html{
 /*Sobre Mi*/
 
 .sobremi{
-    background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1)), url(/Resources/images/wallpaper.jpg);
+    background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1)), url(/images/wallpaper.jpg);
     background-size: contain;
     color: #fff;
     padding:60px 20px;
@@ -293,7 +293,7 @@ html{
 /*Skills*/
  
 .skills{
-    background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1)), url(/Resources/images/wallpaper.jpg);
+    background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1)), url(/images/wallpaper.jpg);
     background-size: contain;
     color: #fff;
     padding:60px 20px;
@@ -474,7 +474,7 @@ html{
 /*Curriculum*/
 
 .curriculum{
-    background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1)), url(/Resources/images/wallpaper.jpg);
+    background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1)), url(/images/wallpaper.jpg);
     background-size: contain;
     color: #fff;
     padding:60px 20px;
@@ -600,7 +600,7 @@ html{
 /*Contacto*/
 
 .contacto{
-    background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1)), url(/Resources/images/wallpaper.jpg);
+    background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1)), url(/images/wallpaper.jpg);
     background-size: contain;
     color: #fff;
     padding:60px 20px;
