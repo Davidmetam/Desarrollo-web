@@ -776,9 +776,10 @@ footer .arriba{
     }
 
     nav.responsive ul li{
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid rgb(255, 136, 0);
         padding: 10px 0;
     }
+
 }
 
 @media screen and (max-width:700px){
