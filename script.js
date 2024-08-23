@@ -40,6 +40,7 @@ function mostrarOcultarMenu(){
     }
 }
 
+//activacion de barras de porcentaje en skills al hacer scroll en la página
 window.onscroll = function(){
     efectoHabilidades();
 }
