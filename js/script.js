@@ -1,4 +1,4 @@
-//Carrousel
+//Carrusel
 document.addEventListener('DOMContentLoaded', function() {
     const carrusel = document.getElementById('carrusel-intereses');
     const intereses = carrusel.querySelectorAll('.interes');
@@ -48,8 +48,6 @@ window.onscroll = function(){
 //Barras de porcentajes de skills
 function efectoHabilidades(){
     var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distancia_skills >= 300){
         let habilidades = document.getElementsByClassName("progreso");
         habilidades[0].classList.add("javacore");
         habilidades[1].classList.add("maven");
@@ -62,7 +60,6 @@ function efectoHabilidades(){
         habilidades[8].classList.add("creatividad");
         habilidades[9].classList.add("dedicacion");
     }
-}
 
 
 //listener para ingresar solo numeros en form / telefono
