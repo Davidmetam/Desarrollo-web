@@ -9,47 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Sobre MÍ</title>
+    <link rel="stylesheet" href="/estilo.css">
 </head>
 
 <body>
     <!--Encabezado-->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">David</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
-
-    <!--Inicio-->
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="images/imagen-personal.png" alt="">
-            </div>
-            <h1>DAVID MENDOZA</h1>
-            <h2>Ingeniero en Desarrollo de Software <br> Jr. Java Developer</h2>
-            <div class="redes">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
-        </div>
-    </section>
+    <iframe src="header.html" frameborder="0" class="iframeHeader"></iframe>
 
     <!--Sobre Mi-->
     <section id="sobremi" class="sobremi">
@@ -83,8 +49,8 @@
                         </ul>
                     </div>
                     <div class="col">
-                        <h3>Intereses</h3>
-                        <div class="contenedor-intereses">
+                        <h3 id="intereses">Intereses</h3>
+                        <div class="contenedor-intereses" id="carrusel-intereses">
                             <div class="interes">
                                 <i class="fa-solid fa-microchip"></i>
                                 <span>TECNOLOGIA</span>
@@ -128,12 +94,17 @@
                         </div>
                     </div>
                 </div>
-                <button>
-                    Descargar CV <i class="fa-solid fa-download"></i>
-                    <span class="overlay"></span>
-                </button>
+                <div class="cv-container">
+                    <a href="/Resources/Docs/David_MendozaTamarit_Resume.pdf" download="DavidMendoza_CV.pdf">
+                        <button>
+                            Descargar CV <i class="fa-solid fa-download"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </a>
+                </div>
         </div>
     </section>
+    <script src="/script.js"></script>
 </body>
 
 </html>
