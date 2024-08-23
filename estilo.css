@@ -15,20 +15,15 @@ html{
 
 /*Header*/
 
-.iframeHeader{
-    width: 100% !important;
-    height: 90px !important;
-    display: block !important;
-}
 
 .contenedor-header{
     background: #1e2326;
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 90px;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 9999;
 }
 
 .contenedor-header header{
@@ -79,8 +74,8 @@ html{
 
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1)), url(/Resources/images/wallpaper.jpg);
-    background-size: cover;
-    height: 90vh;
+    background-size: contain;
+    height: 100vh;
     color: #fff;
     display: flex;
     align-items: center;
@@ -91,9 +86,10 @@ html{
     background-color: #22282c;
     max-width: 350px;
     margin: auto;
-    margin-top: 0px;
+    margin-top: 0;
     text-align: center;
     border-radius: 40px;
+    z-index: 10;
 }
 
 .inicio .contenido-banner img{
@@ -106,7 +102,7 @@ html{
 }
 
 .inicio .contenido-banner h1{
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 37px;
     font-family: 'Righteous';
 }
@@ -138,9 +134,10 @@ html{
 
 .sobremi{
     background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1)), url(/Resources/images/wallpaper.jpg);
-    background-size: auto;
+    background-size: contain;
     color: #fff;
     padding:60px 20px;
+
 }
 
 .sobremi .contenido-seccion{
@@ -172,6 +169,7 @@ html{
 
 .sobremi .fila .col{
     width: 50%;
+    display: block;
 }
 
 
@@ -256,6 +254,7 @@ html{
 .cv-container {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .sobremi a {
@@ -295,7 +294,7 @@ html{
  
 .skills{
     background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1)), url(/Resources/images/wallpaper.jpg);
-    background-size: auto;
+    background-size: contain;
     color: #fff;
     padding:60px 20px;
 }
@@ -476,7 +475,7 @@ html{
 
 .curriculum{
     background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1)), url(/Resources/images/wallpaper.jpg);
-    background-size: auto;
+    background-size: contain;
     color: #fff;
     padding:60px 20px;
 }
@@ -597,3 +596,231 @@ html{
     position: relative;
     bottom: 4px;
 }
+
+/*Contacto*/
+
+.contacto{
+    background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1)), url(/Resources/images/wallpaper.jpg);
+    background-size: contain;
+    color: #fff;
+    padding:60px 20px;
+}
+
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila{
+    display: flex;
+}
+
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input,
+.contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+    resize: none;
+}
+
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(255, 136, 0);
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+.contacto .col img{
+    width: 100%;
+}
+
+.contacto .col .info{
+    position: absolute;
+    top: 60%;
+    background-color: #252A2E;
+    padding: 20px;
+    width: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contacto .col .info ul{
+    list-style: none;
+}
+
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+
+.contacto .col .info ul li i{
+    color: rgb(255, 136, 0);
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 30px 10px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+footer .redes a:hover{
+    background-color: rgb(255, 136, 0);
+}
+
+footer .arriba{
+    display: block;
+    top: -15%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 136, 0);
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+        z-index: 9999;
+    }
+    .nav-responsive{
+        display: block;
+
+    }
+
+    nav.responsive{
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 75px;
+        background-color: #252a2ec4;
+        width: 180px;
+        z-index: 9999;
+        visibility: visible !important;
+  
+
+    }
+
+    nav.responsive ul{
+        display: block !important;
+    }
+
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+
+    .sobremi .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+
+    .skills .fila .col{
+        width: 100%;
+    }
+
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+
+    .curriculum .fila .col{
+        width: 90%;
+    }
+
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .contacto .fila{
+        display: block;
+    }
+
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
+
