@@ -52,14 +52,14 @@ function efectoHabilidades(){
     if(distancia_skills >= 300){
         let habilidades = document.getElementsByClassName("progreso");
         habilidades[0].classList.add("javacore");
-        habilidades[1].classList.add("comunicacion");
-        habilidades[2].classList.add("maven");
-        habilidades[3].classList.add("trabajoequipo");
-        habilidades[4].classList.add("hibernate");
-        habilidades[5].classList.add("resoluciondeproblemas");
-        habilidades[6].classList.add("springframework");
-        habilidades[7].classList.add("creatividad");
-        habilidades[8].classList.add("mysql");
+        habilidades[1].classList.add("maven");
+        habilidades[2].classList.add("hibernate");
+        habilidades[3].classList.add("springframework");
+        habilidades[4].classList.add("mysql");
+        habilidades[5].classList.add("comunicacion");
+        habilidades[6].classList.add("trabajoequipo");
+        habilidades[7].classList.add("resoluciondeproblemas");
+        habilidades[8].classList.add("creatividad");
         habilidades[9].classList.add("dedicacion");
     }
 }
